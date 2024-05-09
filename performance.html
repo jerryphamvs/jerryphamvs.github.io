@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Performance</title>
+    </head>
+
+    <body>
+        <div class="mainpage">
+            <div class="sidebar">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
+                    <h5 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <i class="bi bi-book"></i>
+                        <span class="fs-4">Chapters</span>
+                    </h5>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white">
+                                <i class="bi bi-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components.html" class="nav-link text-white">
+                                <i class="bi bi-screwdriver"></i>
+                                Components
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terminology.html" class="nav-link text-white">
+                                <i class="bi bi-alphabet-uppercase"></i>
+                                Terminology
+                            </a>
+                        </li>
+                        <li>
+                            <a href="performance.html" class="nav-link active" aria-current="page">
+                                <i class="bi bi-bar-chart-line-fill"></i>
+                                Performance
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="content">
+                <div class="titleSection">
+                    <h1 class="pageTitle">Performance</h1>
+                </div>
+                <hr>
+                <div class="benchmark">
+                    <div class=benchCard>
+                        <div class="card" style="max-width: 50rem;" id="perfImg">
+                            <img class="card-img-top" src="images/multicore.webp" alt="Card image cap" id="perfCard">
+                            <div class="card-body">
+                                <p class="card-text" id="cardText">"Cinebench Multicore Benchmark via TechSpot."</p>
+                                <p class="card-text" id="cardText2">"Chromium Compile via GamersNexus."</p>
+                                <p class="card-text" id="cardText3">"3D Mark Benchmark via VideoCardz.com."</p>
+                                <p class="card-text" id="cardText4">"Spiderman Benchmark via TechSpot."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="chevron">
+                        <button class="navButton leftButton"><i class="bi bi-chevron-compact-left"></i></button>
+                        <button class="navButton rightButton"><i class="bi bi-chevron-compact-right"></i></button>
+                    </span>
+                </div>
+                <div class="infobox">
+                    <p class="infotext" id="PageText">
+                        When testing the performance of a PC we tend to look mostly at the CPU and GPU as they have the heaviest workload and conversely impact the perfromance the most. There are two types of benchmarks the first graph above is considered a synthetic benchmark
+                        called Cinebench. Sythentic benchmarks are programs that push your components to the utmost limit and grade the component based on how well they do. As shown on the graph above, in the case of Cinebench, the higher the score the better. The Intel i7 13700k is about
+                        45% better at multi-core workload than the Ryzen 7 7700X according to Cinebench. Does that mean that the i7 13700k is faster than the Ryzen 7 7700x by 45%?
+                    </p>
+                </div>
+                <div class="infobox">
+                    <p class="infotext" id="perfText2">
+                        Not quite. As you can see on the graph above the 13700k performs about 30% faster than the 7700X in a mulit-core compilation of Chromium. This benchmark is known as a real world benchmark, and like the name suggest is more indicitive of what performance you would get
+                        in the real world when you are actually putting your components to their paces. So why the descrepency? This is because synthetic benchmark are designed to run the same test, the same way over and over again but this isn't indicitive of how software in the real world wor
+                        As there is a plethora of hardware combination, performance will vary from build to build and optimizaitions in the software will also vary from program to program.
+                    </p>
+                </div>
+                <div class="infobox">
+                    <p class="infotext" id="perfText3">
+                        That being said synthetic benchmarks are convenient. Real word benchmarking is often extensive, as there are lots of variables and factors you want to eliminate, as to not influence your hardware data. Though synthetic benchmark doesn't perfectly reflect
+                        to real world performance they can give you a rough estimate. In the graph above you can see the huge leap between the last generation 3090 and this generation 4090 a nearly 2x leap in the synthetic benchmarks from 3D Mark. Though as previously stated you will
+                        probably not see that scale in peformance uplift, you can still surmise that the leap between the two generations are quite large.
+                    </p>
+                </div>
+                <div class="infobox">
+                    <p class="infotext" id="perfText4">
+                        With all that being said and done it is indicitive of you to not just look at a single component, and their numbers, but look at them as a whole. The graph above is another example of real world test where they are benchmarking "Spider-Man Remastered" probably
+                        by going through a predetermined route in the game, over and over again, and recording the average FPS on those runs. As you can see paring a high end GPU with a high end CPU will naturally result in the best performance, at the cost of your wallet bare in mind.
+                        However pairing the GPU with a lower end/older generation CPU introduces a bottleneck, as the CPU can not keep up with the GPU causing an overall decrease in perfomance. This lopsided approach to building a PC should be avoided if possible. In conclusion take a
+                        holistic approach to ensure compatibility and performance, choose components with good reviews, that are from reputable brands, and have fun. That's the most important part.
+                    </p>
+                </div>
+                <div class="footerSection">
+                    <hr>
+                    <div class="navPages">
+                        <a class="navButton" href="terminology.html">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <a class="navButton arrowHidden" href="#">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <footer><a href="https://youtu.be/f9qgAOi9Q9E">PSST. SECRET EASTER EGG!</a></footer>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

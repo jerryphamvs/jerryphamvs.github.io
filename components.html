@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Components</title>
+    </head>
+
+    <body>
+        <div class="mainpage">
+            <div class="sidebar">
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
+                    <h5 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <i class="bi bi-book"></i>
+                        <span class="fs-4">Chapters</span>
+                    </h5>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white">
+                                <i class="bi bi-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components.html" class="nav-link active" aria-current="page">
+                                <i class="bi bi-screwdriver"></i>
+                                Components
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terminology.html" class="nav-link text-white">
+                                <i class="bi bi-alphabet-uppercase"></i>
+                                Terminology
+                            </a>
+                        </li>
+                        <li>
+                            <a href="performance.html" class="nav-link text-white">
+                                <i class="bi bi-bar-chart-line-fill"></i>
+                                Performance
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="content">
+                <div class="titleSection">
+                    <h1 class="pageTitle"> Components</h1>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            CPU:
+                            <br>
+                        </span>
+                        The CPU or, Central Processing Unit, is commonly referred to as the brains of a PC because it handles most of the computer's logic.
+                        It's resposnsible for what your computer does and how it does things, think of it like a conductor for an orchestra coordinating the various parts to create a working PC.
+                        Content Creation, such as video editing, compiling, things that have to do with calculations or "thinking" tend to benefit from a "good" CPU.
+                        There are two main brands/manufacturers of CPU in regards to PC Building: Intel and AMD. For day-to-day tasks they function the same, they are CPUs for you computer.
+                        We'll touch on the performance later.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/cpu.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"A photo of Intel and AMD CPU."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            GPU:
+                            <br>
+                        </span>
+                        The GPU (Graphics Processing Unit) or commonly to referred to as a graphics card, is resposnsible for handling graphics related calculations.
+                        Though the CPU can also handle calculating graphics the GPU is a component designed specifically for graphics processsing.
+                        This allows it to be much more efficent and faster at processing graphics than a CPU would be at the same task. Any workload that is graphics related benefits from a graphics card, from gaming, rendering, to scientific simulations.
+                        Graphics cards tend to me the most expensive part and alongside the CPU has the most impact on your overall performance.
+                        The main manufactures of GPUs are NVIDA, AMD and more recently Intel.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/gpu.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"A photo of an MSI GPU"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            Motherboard:
+                            <br>
+                        </span>
+                        The MOBO (motherboard) is like the skeleton of a PC. It's what connects everything together. From your CPU, to your GPU, from your usb cables, to your monitors, the motherboard is the hub in which everything is connected to.
+                        Though it doesn't directly impact the performance of your PC it is still a cruical part, as features and compatibility tend to vary from brand to brand. You want to pick a motherbaord that's compatible with your CPU. There are a plethora
+                        of motherboard manufactures but the main ones are ASUS, MSI, Gigabyte and Asrock.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/motherboard.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"Three MSI AM5 Mothboards."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            Storage (SDD & HDD):
+                            <br>
+                        </span>
+                        There are two main type of storage HDD(Hard Drives) and SSD (Solid State Drive). Their job is to store data, like document, music, video, etc. It is where all of your files are located at. Hard drives are also known as mechanical drives, as there are
+                        actual moving parts inside a hard drive that allows it to read and write data. SSD's on the other hand has no moving parts, which allows SSD's to access and also save data much quicker than hard drives can. This storage type is also known as flash
+                        and is the same technology that a sd card or phone uses. Because hard drives tend to be a lot cheaper than SSD per gigabyte they are often used in conjuction with SSD which are faster, but tend to be more expensive.
+                        Where the hard drive will often be used for longer term storage, files that are not accessed that often, or for just very large files. SSD on the otherhand are often used as the OS or Operating System like windows, or for files/programs that accessed frequently.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/storage.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"A HDD, SSD, and M.2 form factor SSD."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            Ram:
+                            <br>
+                        </span>
+                        Ram (Random Access Memory) or also referred to as memory stores temporary data that needs to be access quickly. Both SSD and HDD can also be referred to as long term memory or non-volitile memory because they can retain data even when your computer shuts down.
+                        Wile RAM on the other hand is known as temporary or volatile memory because the data on them is not saved and is cleared when you turn off your PC. Though SSD speeds have advanced quite a bit, they are still not fast enough to accomodate the workload of a CPU
+                        that needs almost instataneous access to certain files or data. Which is where RAM comes into play, it is the place where data that needs quick access can be temporarily stored.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/ram.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"Ram from Cosair and Kingston."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            PSU:
+                            <br>
+                        </span>
+                        Power supplies or PSU for short is the heart of the PC not quite metaphorically, as the central part, but more in the literal sense as it supplies everything with power. Without it your PC will not turn on simple as that and like without blood, err well you get the picture.
+                        The PSU is responsible for supplying the right amount power to each of your component. As each of your components take a certain amount of power/TDP (Total Draw Power) it is important to pick a PSU rated for that amount of power which is usually represented in W/watts, plus some head room
+                        as components can go beyond their TDP. When picking a PSU it is also cruical to pick from a reputable name brand like EVGA, Seasonic or Cosair as it might quite literally fry your components and if you're really unlucky you as well.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/psu.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"An EVGA 1000 Watts PSU."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="infobox">
+                    <p class="infotext">
+                        <span class="compHeading">
+                            Case:
+                            <br>
+                        </span>
+                        The case is the outer shell the PC body so to speak. It's where you put all of your hardware inside so that's it's not out in the open, but because hardware is encased in something, as electronical compoenents it will naturally generate heat.
+                        That is why cooling such as fans are installed in cases so they can keep your hardware at reasonable temperature and not cause overheating. Overheating is bad for your components as it can reduce the longevity and performance of your PC. Which why it is tantamount to
+                        pick a case that has sufficient airflow, ie enough gaps/spaces so air can travel in through your fans. As airflow isn't something easily measured, a good rule of thumb, like most things is to choose a something with good reviews. Besides that cases are mainly for aesthetics,
+                        though bear in mind cases come in various form factors, so make sure that all of your components can fit inside.
+                    </p>
+                    <div class="imageContainer">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="images/case.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">"NZXT High Airflow PC Case."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerSection">
+                    <hr>
+                    <div class="navPages">
+                        <a class="navButton" href="index.html">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <a class="navButton" href="terminology.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

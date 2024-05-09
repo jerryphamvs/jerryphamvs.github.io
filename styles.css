@@ -1,0 +1,206 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.mainpage {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: #212529;
+    margin-right: 20px;
+}
+
+.fs-4 {
+    padding-left: 8px;
+}
+
+.content {
+    flex: 1;
+    flex-direction: column;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.infobox {
+    display: flex;
+}
+
+.compHeading {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.infotext {
+    font-family: 'Helvetica';
+    font-size: 20px;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.chapterList {
+    padding-top: 30px;
+    list-style-type: upper-roman;
+    font-size: 20px;
+    font-family: 'Helvetica'
+}
+
+.termHeader {
+    width: 6em;
+}
+
+.imageContainer {
+    margin: auto;
+    padding: 30px;
+}
+
+.definition {
+    padding: 30px;
+    margin: auto;
+}
+
+footer {
+    text-align: center
+}
+
+.navButton {
+    border: none;
+    background-color: transparent;
+    font-size: 3em;
+    margin: 0.6em;
+}
+
+.navButton:hover .bi-chevron-compact-right {
+    color: grey;
+}
+
+.navButton:hover .bi-chevron-compact-left {
+    color: grey;
+}
+
+.navPages {
+    display: flex;
+    justify-content: center;
+}
+
+.navPages a {
+    color: black;
+}
+
+.navPages a:hover {
+    color: grey;
+}
+
+
+.benchmark {
+    display: flex;
+    justify-content: center;
+}
+
+
+.chevron {
+    display: contents;
+}
+
+
+.leftButton {
+    order: 0;
+    padding-right: 30px;
+}
+
+.rightButton {
+    order: 2;
+    padding-left: 30px;
+}
+
+.benchCard {
+    order: 1;
+    justify-content: center;
+}
+
+.arrowHidden {
+    visibility: hidden;
+}
+
+
+#perfText2 {
+    display: none;
+}
+
+#perfText3 {
+    display: none;
+}
+
+#perfText4 {
+    display: none;
+}
+
+#cardText2 {
+    display: none;
+}
+
+#cardText3 {
+    display: none;
+}
+
+#cardText4 {
+    display: none;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+/* Adjust layout when viewed on smaller devices */
+@media (max-width: 1000px) {
+    .infobox {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        order: 1;
+        margin: auto;
+        padding: 1em 0 1em 0;
+        max-width: 100%;
+    }
+
+    .infotext {
+        order: 2;
+        padding: 1em;
+    }
+
+    .termHeader {
+        text-align: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #perfImg {
+        min-width: 100%;
+    }
+
+    .chevron {
+        order: 1;
+        display: inline;
+        margin: auto;
+    }
+
+    .benchmark {
+        flex-direction: column;
+    }
+}
